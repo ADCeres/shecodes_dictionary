@@ -11,14 +11,15 @@ function Results(props) {
       <div className="results-container">
         <h2 className="word">{props.results.word}</h2>
         <h3 className="phonetic">{props.results.phonetic}</h3>
-        {props.results.meanings.map(function (meaning, index) {
-          return (
-            <div key={index}>
-              <Meaning meaning={meaning} />
-            </div>
-          );
-        })}
       </div>
+      <br />
+      {props.results.meanings.map(function (meaning, index) {
+        return (
+          <div key={index}>
+            <Meaning meaning={meaning} />
+          </div>
+        );
+      })}
     </div>
   );
 }
