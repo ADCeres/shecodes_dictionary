@@ -7,6 +7,7 @@ function Layout() {
     <div>
       <Header />
       <Search />
+      <hr className="hrNew" />
     </div>
   );
 }
