@@ -126,10 +126,18 @@ form input {
   font-family: "Tinos", serif;
   font-size: 18px;
   margin: 10px auto;
+  color: #0e4c64;
 }
 
 .defintion {
   font-family: "Tinos", serif;
   font-size: 18px;
   margin: 10px auto;
+}
+
+.example {
+  size: 6px;
+  font-family: "Tinos", serif;
+  color: #0e4c64;
+  margin: 25px;
 }

@@ -13,6 +13,7 @@ function Search() {
   }
 
   function handleResponse(response) {
+    console.log(response.data);
     setResults(response.data[0]);
   }
 
