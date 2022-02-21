@@ -14,6 +14,7 @@ function Photos(props) {
                     <img
                       src={photo.src.landscape}
                       className="img-fluid word-photo"
+                      alt="pic"
                     />
                   </a>
                 </div>
