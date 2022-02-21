@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Synonyms(props) {
+function Synonyms(props) {
   if (props.synonyms) {
     return (
       <div className="synonyms">
@@ -21,3 +21,5 @@ export default function Synonyms(props) {
     return null;
   }
 }
+
+export default Synonyms;

@@ -187,3 +187,8 @@ a {
   color: rgb(235, 208, 120);
   font-weight: bold;
 }
+
+.word-photo {
+  border: 1px solid #0e4c64;
+  border-radius: 5px;
+}
