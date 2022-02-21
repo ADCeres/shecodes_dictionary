@@ -148,3 +148,24 @@ form input {
   color: #0e4c64;
   margin: 25px;
 }
+
+.synonyms {
+  font-family: "Tinos", serif;
+  font-size: 15px;
+  color: #455257;
+  margin: 0px 0px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+li {
+  font-family: "Tinos", serif;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  font-family: "Tinos", serif;
+  margin: 0px;
+}
