@@ -5,7 +5,7 @@ import "./App.css";
 
 function Search() {
   let [keyword, setKeyword] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState("");
 
   function handleKeywordChange(event) {
     event.preventDefault();
@@ -24,24 +24,43 @@ function Search() {
 
   //api.dictionaryapi.dev/api/v2
 
-  return (
-    <div className="Search">
-      <form onSubmit={searchDictionary}>
-        <input
-          type="search"
-          placeholder="Enter Word Here"
-          id="entry-line"
-          autoFocus="on"
-          autoComplete="off"
-          onChange={handleKeywordChange}
-        />
-        <input type="submit" value="Search" id="submit-button" />
-      </form>
-      <br />
-      <hr className="hrNew" />
-      <Results results={results} />
-    </div>
-  );
+  if (results !== "") {
+    return (
+      <div className="Search">
+        <form onSubmit={searchDictionary}>
+          <input
+            type="search"
+            placeholder="Enter Word Here"
+            id="entry-line"
+            autoFocus="on"
+            autoComplete="off"
+            onChange={handleKeywordChange}
+          />
+          <input type="submit" value="Search" id="submit-button" />
+        </form>
+        <br />
+        <hr className="hrNew" />
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="Search">
+        <form onSubmit={searchDictionary}>
+          <input
+            type="search"
+            placeholder="Enter Word Here"
+            id="entry-line"
+            autoFocus="on"
+            autoComplete="off"
+            onChange={handleKeywordChange}
+          />
+          <input type="submit" value="Search" id="submit-button" />
+        </form>
+        <br />
+        <hr className="hrNew" />
+      </div>
+    );
+  }
 }
-
 export default Search;
