@@ -122,6 +122,13 @@ form input {
   margin: 0px auto;
 }
 
+.phonetic-na {
+  font-family: "Tinos", serif;
+  font-size: 14px;
+  color: #455257;
+  margin: 0px auto;
+}
+
 .partOfSpeech {
   font-family: "Tinos", serif;
   font-size: 18px;
