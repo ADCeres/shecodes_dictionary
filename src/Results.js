@@ -10,8 +10,9 @@ function Results(props) {
       <div className="results-container">
         <h2 className="word">{props.results.word}</h2>
         <h3 className="phonetic">{props.results.phonetic}</h3>
+        <p className="partOfSpeech">{props.results.meanings[0].partOfSpeech}</p>
         <p className="definition">
-          <Mloop />
+          {props.results.meanings[0].definitions[0].definition}
         </p>
       </div>
     </div>
