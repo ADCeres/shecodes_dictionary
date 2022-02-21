@@ -1,4 +1,5 @@
 import React from "react";
+import Meaning from "./Meaning.js";
 
 import "./App.css";
 
@@ -10,10 +11,13 @@ function Results(props) {
       <div className="results-container">
         <h2 className="word">{props.results.word}</h2>
         <h3 className="phonetic">{props.results.phonetic}</h3>
-        <p className="partOfSpeech">{props.results.meanings[0].partOfSpeech}</p>
-        <p className="definition">
-          {props.results.meanings[0].definitions[0].definition}
-        </p>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
