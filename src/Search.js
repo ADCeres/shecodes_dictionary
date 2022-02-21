@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import Results from "./Results.js";
 import axios from "axios";
 import "./App.css";
 
 function Search() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState({});
 
   function handleKeywordChange(event) {
     event.preventDefault();
@@ -11,7 +13,7 @@ function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response.data);
+    setResults(response.data[0]);
   }
 
   function searchDictionary(event) {
@@ -35,6 +37,9 @@ function Search() {
         />
         <input type="submit" value="Search" id="submit-button" />
       </form>
+      <br />
+      <hr className="hrNew" />
+      <Results results={results} />
     </div>
   );
 }

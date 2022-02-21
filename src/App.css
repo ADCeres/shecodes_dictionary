@@ -95,3 +95,41 @@ form input {
   opacity: 95%;
   width: 550px;
 }
+
+.results-container {
+  box-shadow: 0px 0px 15px rgb(240, 227, 183);
+  border: 2px solid #0e4c64;
+  border-radius: 5px;
+  background: white;
+  max-width: 600px;
+  display: block;
+  margin: 0px auto;
+  font-family: "Tinos", serif;
+  padding: 15px;
+  opacity: 65%;
+}
+
+.word {
+  font-family: "Tinos", serif;
+  font-size: 45px;
+  margin: 0px auto;
+}
+
+.phonetic {
+  font-family: "Tinos", serif;
+  font-size: 20px;
+  color: #0e4c64;
+  margin: 0px auto;
+}
+
+.partOfSpeech {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.defintion {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  margin: 10px auto;
+}
